@@ -188,9 +188,9 @@ Tampilan saaat memilih menu 2, program menampilkan data kegiatan yang sudah dita
 
 <img width="695" height="102" alt="image" src="https://github.com/user-attachments/assets/1b0cc8b4-e4f7-437a-a808-e286ca690c79" />
 
-Tampilan ketika kita memilih menu 3, program menampilkan data kegiatan yang tersedia, lalu meminta inputan untuk mengubah data kegiatan dari Nama, Tanggal dan juga Status Kegiatan, ketika hanya ingin mengubah salah satu saja dapat mengosongkan inputan yang lain
+Tampilan ketika kita memilih menu 3, program menampilkan data kegiatan yang tersedia, lalu meminta inputan untuk mengubah data kegiatan dari Nama, Tanggal dan juga Status Kegiatan, ketika hanya ingin mengubah salah satu saja dapat mengosongkan inputan yang lain dan ketika ingin mengubah status dapat menginputkan angka 1 untuk mendefinisikan "Selesai", angka 2 untuk mendefinisikan "Belum Selesai"
 
-<img width="690" height="439" alt="image" src="https://github.com/user-attachments/assets/f4e00fe1-1b3d-4860-983f-3677442486e4" />
+<img width="677" height="409" alt="image" src="https://github.com/user-attachments/assets/5f119395-cec8-4a57-8cc9-29dfcf7b04cb" />
 
 Tampilan ketika memilih menu 4, disini program kembali menampilkan data kegiatan yang tersedia, dan meminta inputan data kegiatan yang ingin di hapus
 
