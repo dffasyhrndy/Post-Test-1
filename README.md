@@ -116,6 +116,16 @@ Menu ini menampilkan semua kegiatan yang sudah tersimpan. Jika daftar masih koso
 6. **Update Daftar Kegiatan**
 ```java
 case 3:
+    System.out.println("Daftar Kegiatan Anda");
+    if (namaKegiatan.isEmpty()) {
+        System.out.println("Belum Ada Kegiatan");
+    } else {
+        for (int i = 0; i < namaKegiatan.size(); i++) {
+            System.out.println((i + 1) + ". " + namaKegiatan.get(i) +
+                    " | Tanggal: " + tanggal.get(i) +
+                    " | Status : " + status.get(i));
+        }
+    }
     System.out.println("Pilih nomor kegiatan yang ingin diubah: ");
     int idx = input.nextInt() - 1;
     input.nextLine();
@@ -126,16 +136,22 @@ case 3:
         if (!newNama.isEmpty()) {
             namaKegiatan.set(idx, newNama);
         }
+
         System.out.println("Update Tanggal: ");
         String newTanggal = input.nextLine();
         if (!newTanggal.isEmpty()) {
             tanggal.set(idx, newTanggal);
         }
-        System.out.println("Update Status Kegiatan: ");
-        String newStatus = input.nextLine();
-        if (!newStatus.isEmpty()) {
-            status.set(idx, newStatus);
+
+        System.out.println("Update Status (1 = Selesai, 2 = Belum Selesai): ");
+        int pilihStatus = input.nextInt();
+        input.nextLine();
+        if (pilihStatus == 1) {
+            status.set(idx, "Selesai");
+        } else if (pilihStatus == 2) {
+            status.set(idx, "Belum Selesai");
         }
+
         System.out.println("Kegiatan Berhasil di Update!");
     } else {
         System.out.println("Pilihan tidak valid.");
